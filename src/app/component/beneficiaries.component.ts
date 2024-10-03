@@ -11,11 +11,11 @@ var window: Window & typeof globalThis
     <div class="container mx-auto px-4 py-8">
       <h2 class="text-5xl text-center font-bold mb-6">Current Beneficiaries</h2>
       
-      <div class="relative overflow-hidden text-center shadow-md">
+      <div class="relative overflow-hidden text-center shadow-md h-3/6">
         <div class="flex transition-transform duration-500 ease-in-out" [style.transform]="'translateX(-' + (currentIndex * 100) + '%)'">
           <div *ngFor="let card of cards; let i = index" class="w-full flex-shrink-0">
             <div class="bg-white rounded-lg shadow-md p-6">
-              <img [src]="card.image" [alt]="'Beneficiary ' + (i + 1)" class="w-full h-48 object-cover rounded-md mb-4">
+              <img [src]="card.image" [alt]="'Beneficiary ' + (i + 1)" class="w-full h-2/6 object-cover rounded-md mb-4">
               <h3 class="text-lg font-semibold mb-2">{{ card.name }}</h3>
               <p class="text-gray-600">{{ card.description }}</p>
             </div>
