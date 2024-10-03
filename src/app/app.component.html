@@ -8,135 +8,59 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <style>
-  
+  .shadow-text {
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    }
 </style>
 
-<header class="bg-blue-600 text-white">
-  <div class="container mx-auto px-4 py-6 flex justify-between items-center">
-    <h1 class="text-3xl font-bold">NGO Name</h1>
-    <nav>
-      <ul class="flex space-x-6">
-        <li><a href="#" class="hover:text-blue-200 transition duration-300">Home</a></li>
-        <li><a href="#" class="hover:text-blue-200 transition duration-300">About</a></li>
-        <li><a href="#" class="hover:text-blue-200 transition duration-300">Projects</a></li>
-        <li><a href="#" class="hover:text-blue-200 transition duration-300">Donate</a></li>
-        <li><a href="#" class="hover:text-blue-200 transition duration-300">Contact</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
-
-<!-- Hero Section -->
-<section class="bg-blue-500 text-white py-20">
-  <div class="container mx-auto px-4 text-center">
-    <h2 class="text-5xl font-bold mb-6">Making a Difference Together</h2>
-    <p class="text-xl mb-8 max-w-2xl mx-auto">Join us in our mission to create positive change and build a better world for all.</p>
-    <a href="#" class="bg-white text-blue-500 px-8 py-3 rounded-full font-semibold hover:bg-blue-100 transition duration-300">Get Involved</a>
-  </div>
-</section>
-
-<!-- Mission Statement -->
-<section class="py-16 bg-gray-100">
-  <div class="container mx-auto px-4">
-    <h2 class="text-3xl font-bold text-center mb-8">Our Mission</h2>
-    <p class="text-xl text-center max-w-3xl mx-auto">We are dedicated to empowering communities, protecting the environment, and fostering sustainable development through education and grassroots initiatives.</p>
-  </div>
-</section>
-
-<!-- Featured Projects -->
-<section class="py-16">
-  <div class="container mx-auto px-4">
-    <h2 class="text-3xl font-bold text-center mb-12">Featured Projects</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div class="bg-white rounded-lg shadow-md overflow-hidden">
-        <img src="https://via.placeholder.com/400x250" alt="Project 1" class="w-full h-48 object-cover">
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2">Clean Water Initiative</h3>
-          <p class="text-gray-600 mb-4">Providing clean and safe drinking water to rural communities.</p>
-          <a href="#" class="text-blue-500 font-semibold hover:text-blue-600">Learn More →</a>
-        </div>
+<!-- Stained Glass Navbar -->
+<nav class="fixed top-2 left-2 right-2 z-50 bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg shadow-lg rounded-xl">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+        <a href="#" class="text-black font-bold text-xl">About</a>
       </div>
-      <div class="bg-white rounded-lg shadow-md overflow-hidden">
-        <img src="https://via.placeholder.com/400x250" alt="Project 2" class="w-full h-48 object-cover">
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2">Education for All</h3>
-          <p class="text-gray-600 mb-4">Building schools and providing quality education in underserved areas.</p>
-          <a href="#" class="text-blue-500 font-semibold hover:text-blue-600">Learn More →</a>
-        </div>
+      <div class="flex-1 flex items-center justify-center">
+        <a href="#" class="text-black font-extrabold text-2xl">KarmNGO</a>
       </div>
-      <div class="bg-white rounded-lg shadow-md overflow-hidden">
-        <img src="https://via.placeholder.com/400x250" alt="Project 3" class="w-full h-48 object-cover">
-        <div class="p-6">
-          <h3 class="text-xl font-semibold mb-2">Sustainable Agriculture</h3>
-          <p class="text-gray-600 mb-4">Promoting eco-friendly farming practices to ensure food security.</p>
-          <a href="#" class="text-blue-500 font-semibold hover:text-blue-600">Learn More →</a>
-        </div>
+      <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-end">
+        <a href="#" class="text-black font-bold text-xl">Contact</a>
       </div>
     </div>
   </div>
-</section>
+</nav>
 
-<!-- Impact Statistics -->
-<section class="bg-blue-600 text-white py-16">
-  <div class="container mx-auto px-4">
-    <h2 class="text-3xl font-bold text-center mb-12">Our Impact</h2>
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-      <div>
-        <p class="text-4xl font-bold mb-2">500+</p>
-        <p class="text-xl">Projects Completed</p>
-      </div>
-      <div>
-        <p class="text-4xl font-bold mb-2">1M+</p>
-        <p class="text-xl">Lives Impacted</p>
-      </div>
-      <div>
-        <p class="text-4xl font-bold mb-2">50+</p>
-        <p class="text-xl">Countries Reached</p>
-      </div>
-      <div>
-        <p class="text-4xl font-bold mb-2">10K+</p>
-        <p class="text-xl">Volunteers Engaged</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Call to Action -->
-<section class="py-16 bg-gray-100">
-  <div class="container mx-auto px-4 text-center">
-    <h2 class="text-3xl font-bold mb-6">Ready to Make a Difference?</h2>
-    <p class="text-xl mb-8 max-w-2xl mx-auto">Your support can help us continue our vital work and create lasting change in communities around the world.</p>
+<!-- Hero Section with Background Video -->
+<section class="relative h-screen flex items-center justify-center overflow-hidden">
+  <!-- Background Video -->
+  <video 
+    autoplay 
+    loop 
+    muted 
+    class="absolute z-10 w-auto min-w-full min-h-full max-w-none"
+  >
+    <source src="karmngo.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  
+  <!-- Content Overlay -->
+  <div class="z-20 text-center text-white">
+    <h1 class="text-8xl font-extrabold mb-4 shadow-text">Karm NGO</h1>
+    <p class="text-2xl mb-8 shadow-text">Empowering communities, changing lives</p>
     <div class="space-x-4">
-      <a href="#" class="bg-blue-500 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-600 transition duration-300">Donate Now</a>
-      <a href="#" class="bg-white text-blue-500 px-8 py-3 rounded-full font-semibold border border-blue-500 hover:bg-blue-50 transition duration-300">Volunteer</a>
+      <a href="#" class="bg-blue-600 px-8 py-3 hover:bg-blue-700 text-white font-bold rounded-full transition duration-300">
+        Learn More
+      </a>
+      <a href="#" class="bg-green-600 px-8 py-3 hover:bg-green-700 text-white font-bold rounded-full transition duration-300">
+        Donate Now
+      </a>
     </div>
   </div>
 </section>
+<section>
+  <app-beneficiaries></app-beneficiaries>
+</section>
 
-<!-- Footer -->
-<footer class="bg-gray-800 text-white py-12">
-  <div class="container mx-auto px-4">
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-      <div>
-        <h3 class="text-xl font-semibold mb-4">About Us</h3>
-        <p class="text-gray-400">We are a non-profit organization dedicated to making a positive impact on communities worldwide.</p>
-      </div>
-      <div>
-        <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
-        <ul class="space-y-2">
-          <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Home</a></li>
-          <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">About</a></li>
-          <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Projects</a></li>
-          <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Donate</a></li>
-          <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
-        <p class="text-gray-400">123 NGO Street, City, Country</p>
-        <p class="text-gray-400">Phone: +1 234 567 890</p>
-        <p class="text-gray-400">Email: "info&#64;karmngo.org"</p>
-      </div>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
