@@ -1,7 +1,7 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * Delete the template below * * * * * * * * * -->
 <!-- * * * * * * * to get started with your project! * * * * * * * -->
@@ -13,65 +13,93 @@
     }
 </style>
 
-<!-- Stained Glass Navbar -->
-<nav class="fixed top-2 left-2 right-2 z-50 bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg shadow-lg rounded-xl">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-    <div class="flex items-center justify-between h-16">
-      <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-        <a href="#" class="text-black font-bold text-xl">About</a>
-      </div>
-      <div class="flex-1 flex items-center justify-center">
-        <a href="#" class="text-black font-extrabold text-2xl">KarmNGO</a>
-      </div>
-      <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-end">
-        <a href="#" class="text-black font-bold text-xl">Contact</a>
-      </div>
-    </div>
-  </div>
-</nav>
+<div class="bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100 min-h-screen">
+  <app-navbar></app-navbar>
 
-<app-donate-now></app-donate-now>
-<!-- Hero Section with Background Video -->
-<section class="relative h-screen flex items-center justify-center overflow-hidden">
-  <!-- Background Video -->
-  <video 
-    autoplay 
-    loop 
-    muted 
-    class="absolute z-10 w-auto min-w-full min-h-full max-w-none"
-  >
-    <source src="karmngo.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
+  <main>
+    <!-- Hero Section with Background Video -->
+    <section class="relative h-screen flex items-center justify-center overflow-hidden">
+      <video 
+        autoplay 
+        loop 
+        muted 
+        class="absolute z-10 w-auto min-w-full min-h-full max-w-none object-cover"
+      >
+        <source src="karmngo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      
+      <div class="z-20 text-center text-white">
+        <h1 class="text-6xl md:text-8xl font-extrabold mb-4 shadow-text">Karm NGO</h1>
+        <p class="text-xl md:text-2xl mb-8 shadow-text">Empowering communities, changing lives</p>
+        <div class="space-x-4">
+          <a href="#about" class="bg-blue-600 px-6 py-3 hover:bg-blue-700 text-white font-bold rounded-full transition duration-300">
+            Learn More
+          </a>
+          <a href="#donate" class="bg-green-600 px-6 py-3 hover:bg-green-700 text-white font-bold rounded-full transition duration-300">
+            Donate Now
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="py-16 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-8">About Us</h2>
+        <p class="text-lg text-center max-w-3xl mx-auto">
+          Karm NGO is dedicated to empowering communities and changing lives through sustainable development initiatives. 
+          Our mission is to create lasting positive impact in areas such as education, healthcare, and environmental conservation.
+        </p>
+      </div>
+    </section>
+
+    <section id="beneficiaries" class="py-16">
+      <app-beneficiaries></app-beneficiaries>
+    </section>
+
+    <section id="partners" class="py-16 animated-bg">
+      <div class="container mx-auto px-4">
+        <h2 class="text-4xl font-bold text-center mb-8 text-white">Our NGO Partners</h2>
+        <belt></belt>
+      </div>
+    </section>
+
+    <section id="donate" class="py-16">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-4xl font-bold mb-8">Make a Difference Today</h2>
+        <p class="text-lg mb-8 max-w-2xl mx-auto">
+          Your donation can help us continue our vital work in communities around the world. 
+          Every contribution, no matter how small, makes a significant impact.
+        </p>
+        <app-donate-now></app-donate-now>
+      </div>
+    </section>
+    <section>
+      <app-fields></app-fields>
+    </section>
+  </main>
+
+  <app-footer></app-footer>
+</div>
+
+<router-outlet></router-outlet>
+
+<style>
+  .animated-bg {
+    background: linear-gradient(-45deg, #4CAF50, #8BC34A, #CDDC39, #7CB342);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
   
-  <!-- Content Overlay -->
-  <div class="z-20 text-center text-white">
-    <h1 class="text-8xl font-extrabold mb-4 shadow-text">Karm NGO</h1>
-    <p class="text-2xl mb-8 shadow-text">Empowering communities, changing lives</p>
-    <div class="space-x-4">
-      <a href="#" class="bg-blue-600 px-8 py-3 hover:bg-blue-700 text-white font-bold rounded-full transition duration-300">
-        Learn More
-      </a>
-      <a href="#" class="bg-green-600 px-8 py-3 hover:bg-green-700 text-white font-bold rounded-full transition duration-300">
-        Donate Now
-      </a>
-    </div>
-  </div>
-</section>
-<section class="h-screen">
-  <app-beneficiaries></app-beneficiaries>
-</section>
-<section class="h-60">
-  <belt><h2 class="text-2xl font-bold text-center p-4">Our NGOs</h2></belt>
-</section>
-
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * The content above * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * * -->
-<!-- * * * * * * * * * * and can be replaced.  * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * End of Placeholder  * * * * * * * * * * * * -->
-<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-
-
-<router-outlet />
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+</style>
