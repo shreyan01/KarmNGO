@@ -7,39 +7,20 @@ import { RouterModule } from '@angular/router';
   standalone: true,
   imports: [CommonModule, RouterModule],
   template: `
-    <nav class="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-full shadow-lg w-11/12 max-w-7xl">
-      <div class="mx-auto px-6 sm:px-8 lg:px-10">
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
+      <div class="container mx-auto px-4">
         <div class="flex items-center justify-between h-16">
           <a routerLink="/" class="text-gradient font-extrabold text-2xl">KarmNGO</a>
-          <button (click)="toggleDrawer()" class="text-white focus:outline-none">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </nav>
-
-    <!-- Drawer Menu -->
-    <div *ngIf="isDrawerOpen" class="fixed inset-0 bg-gray-800 bg-opacity-75 z-50">
-      <div class="fixed right-0 top-0 bottom-0 w-64 bg-white shadow-lg transform transition-transform duration-300 ease-in-out"
-           [ngClass]="{'translate-x-0': isDrawerOpen, 'translate-x-full': !isDrawerOpen}">
-        <div class="p-5">
-          <button (click)="toggleDrawer()" class="absolute top-3 right-3 text-gray-600 hover:text-gray-800">
-            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
-            </svg>
-          </button>
-          <ul class="mt-8">
-            <li class="mb-4"><a routerLink="/" class="text-gray-800 hover:text-blue-600 transition duration-300" (click)="toggleDrawer()">Home</a></li>
-            <li class="mb-4"><a routerLink="/about-us" routerLinkActive="active" ariaCurrentWhenActive="page" class="text-gray-800 hover:text-blue-600 transition duration-300" (click)="toggleDrawer()">About Us</a></li>
-            <li class="mb-4"><a routerLink="/" fragment="beneficiaries" class="text-gray-800 hover:text-blue-600 transition duration-300" (click)="toggleDrawer()">Beneficiaries</a></li>
-            <li class="mb-4"><a routerLink="/" fragment="partners" class="text-gray-800 hover:text-blue-600 transition duration-300" (click)="toggleDrawer()">Partners</a></li>
-            <li class="mb-4"><a routerLink="/" fragment="donate" class="text-gray-800 hover:text-blue-600 transition duration-300" (click)="toggleDrawer()">Donate</a></li>
+          <ul class="flex space-x-6">
+            <li><a routerLink="/" routerLinkActive="text-blue-600" [routerLinkActiveOptions]="{exact: true}" class="text-gray-800 hover:text-blue-600 transition duration-300">Home</a></li>
+            <li><a routerLink="/about-us" routerLinkActive="text-blue-600" class="text-gray-800 hover:text-blue-600 transition duration-300">About Us</a></li>
+            <li><a routerLink="/" fragment="beneficiaries" class="text-gray-800 hover:text-blue-600 transition duration-300">Beneficiaries</a></li>
+            <li><a routerLink="/" fragment="partners" class="text-gray-800 hover:text-blue-600 transition duration-300">Partners</a></li>
+            <li><a routerLink="/" fragment="donate" class="text-gray-800 hover:text-blue-600 transition duration-300">Donate</a></li>
           </ul>
         </div>
       </div>
-    </div>
+    </nav>
   `,
   styles: [`
     .text-gradient {
@@ -51,10 +32,4 @@ import { RouterModule } from '@angular/router';
     }
   `]
 })
-export class NavbarComponent {
-  isDrawerOpen = false;
-
-  toggleDrawer() {
-    this.isDrawerOpen = !this.isDrawerOpen;
-  }
-}
+export class NavbarComponent {}
