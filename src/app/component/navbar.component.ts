@@ -1,15 +1,16 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
   template: `
     <nav class="fixed top-4 left-1/2 transform -translate-x-1/2 z-50 bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg rounded-full shadow-lg w-11/12 max-w-7xl">
       <div class="mx-auto px-6 sm:px-8 lg:px-10">
         <div class="flex items-center justify-between h-16">
-          <a href="#" class="text-gradient font-extrabold text-2xl">KarmNGO</a>
+          <a routerLink="/" class="text-gradient font-extrabold text-2xl">KarmNGO</a>
           <button (click)="toggleDrawer()" class="text-white focus:outline-none">
             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
@@ -30,10 +31,11 @@ import { CommonModule } from '@angular/common';
             </svg>
           </button>
           <ul class="mt-8">
-            <li class="mb-4"><a href="#about" class="text-gray-800 hover:text-blue-600 transition duration-300" (click)="toggleDrawer()">About</a></li>
-            <li class="mb-4"><a href="#beneficiaries" class="text-gray-800 hover:text-blue-600 transition duration-300" (click)="toggleDrawer()">Beneficiaries</a></li>
-            <li class="mb-4"><a href="#partners" class="text-gray-800 hover:text-blue-600 transition duration-300" (click)="toggleDrawer()">Partners</a></li>
-            <li class="mb-4"><a href="#donate" class="text-gray-800 hover:text-blue-600 transition duration-300" (click)="toggleDrawer()">Donate</a></li>
+            <li class="mb-4"><a routerLink="/" class="text-gray-800 hover:text-blue-600 transition duration-300" (click)="toggleDrawer()">Home</a></li>
+            <li class="mb-4"><a routerLink="/about-us" routerLinkActive="active" ariaCurrentWhenActive="page" class="text-gray-800 hover:text-blue-600 transition duration-300" (click)="toggleDrawer()">About Us</a></li>
+            <li class="mb-4"><a routerLink="/" fragment="beneficiaries" class="text-gray-800 hover:text-blue-600 transition duration-300" (click)="toggleDrawer()">Beneficiaries</a></li>
+            <li class="mb-4"><a routerLink="/" fragment="partners" class="text-gray-800 hover:text-blue-600 transition duration-300" (click)="toggleDrawer()">Partners</a></li>
+            <li class="mb-4"><a routerLink="/" fragment="donate" class="text-gray-800 hover:text-blue-600 transition duration-300" (click)="toggleDrawer()">Donate</a></li>
           </ul>
         </div>
       </div>
