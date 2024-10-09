@@ -5,22 +5,19 @@ import { Component, OnInit } from '@angular/core';
   standalone: true,
   template: `
     <button 
-      class="fixed bottom-6 z-20 right-6 bg-orange-500 text-white font-bold p-6 rounded-full shadow-lg hover:bg-orange-600 transition-transform transform hover:scale-105 vibrate" 
+      class="fixed bottom-8 z-20 right-8 bg-gradient-to-r from-orange-500 to-red-600 text-white font-extrabold w-32 h-32 rounded-full shadow-xl hover:from-orange-600 hover:to-red-700 transition-all transform hover:scale-110 pulse flex flex-col items-center justify-center" 
       (click)="donate()">
-      Donate Now
+      <span class="text-lg mb-1">Donate</span>
+      <span class="text-xl">Now!</span>
     </button>
   `,
   styles: [`
-    @keyframes vibrate {
-      0% { transform: translate(0); }
-      20% { transform: translate(-2px, 2px); }
-      40% { transform: translate(-2px, -2px); }
-      60% { transform: translate(2px, 2px); }
-      80% { transform: translate(2px, -2px); }
-      100% { transform: translate(0); }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
     }
-    .vibrate {
-      animation: vibrate 0.3s linear infinite;
+    .pulse {
+      animation: pulse 2s infinite;
     }
   `]
 })
