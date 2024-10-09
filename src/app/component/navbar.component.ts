@@ -15,7 +15,7 @@ import { RouterModule } from '@angular/router';
             <a routerLink="/" routerLinkActive="text-blue-600" [routerLinkActiveOptions]="{exact: true}" class="text-gray-800 hover:text-blue-600 transition duration-300">Home</a>
             <a routerLink="/about-us" routerLinkActive="text-blue-600" class="text-gray-800 hover:text-blue-600 transition duration-300">About Us</a>
             <a routerLink="/contact" routerLinkActive="text-blue-600" class="text-gray-800 hover:text-blue-600 transition duration-300">Contact Us</a>
-            <a routerLink="/" routerLinkActive="text-blue-600" class="text-gray-800 hover:text-blue-600 transition duration-300">Stories</a>
+            <a routerLink="/stories" routerLinkActive="text-blue-600" class="text-gray-800 hover:text-blue-600 transition duration-300">Stories</a>
             <a routerLink="/" fragment="activities" class="text-gray-800 hover:text-blue-600 transition duration-300">Activities</a>
             <a routerLink="/" fragment="certificate" class="text-gray-800 hover:text-blue-600 transition duration-300">Certificate</a>
             <a routerLink="/" fragment="volunteer" class="text-gray-800 hover:text-blue-600 transition duration-300">Volunteer</a>
