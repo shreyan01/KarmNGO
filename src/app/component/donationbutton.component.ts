@@ -14,10 +14,10 @@ import { Component, OnInit } from '@angular/core';
   styles: [`
     @keyframes pulse {
       0%, 100% { transform: scale(1); }
-      50% { transform: scale(1.05); }
+      50% { transform: scale(1.5); }
     }
     .pulse {
-      animation: pulse 2s infinite;
+      animation: pulse 1s infinite;
     }
   `]
 })
