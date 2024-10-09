@@ -1,45 +1,30 @@
-<!-- 
-  Note: If the video is not playing, please check the following:
-  1. Ensure the video file "karmngo.mp4" exists in the correct directory.
-  2. Verify that the video file is not corrupted.
-  3. Check if the video format is supported by the browser.
-  4. Make sure there are no network issues preventing the video from loading.
--->
-
 <div class="min-h-screen relative">
-    <video 
-        autoplay 
-        loop 
-        muted 
-        [defaultMuted]="true"
-        playsinline
-        class="fixed top-0 left-0 w-full h-full object-cover z-10"
-    >
-        <source src="karmngo.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-    </video>
-
+    <div class="fixed inset-0 z-0">
+        <div class="slideshow">
+            <div class="slide" style="background-image: url('image1.jpg');"></div>
+            <div class="slide" style="background-image: url('image2.jpg');"></div>
+            <div class="slide" style="background-image: url('image3.jpg');"></div>
+            <div class="slide" style="background-image: url('image4.jpg');"></div>
+        </div>
+    </div>
     <div class="relative z-20">
         <app-navbar></app-navbar>
         
         <main>
-            <!-- Hero Section -->
-            <section class="h-screen flex items-center justify-center">
-                <div class="text-center text-white">
-                    <h1 class="text-6xl md:text-8xl font-extrabold mb-4 shadow-lg">Karm NGO</h1>
-                    <p class="text-xl md:text-2xl mb-8 shadow-md">Empowering communities, changing lives</p>
+            <!-- Hero Section with Fixed Background Slideshow -->
+            <section class="relative h-screen flex items-center justify-center overflow-hidden">
+                <div class="z-20 text-center text-white">
+                    <h1 class="text-6xl md:text-8xl font-extrabold mb-4 shadow-text">Karm NGO</h1>
+                    <p class="text-xl md:text-2xl mb-8 shadow-text">Empowering communities, changing lives</p>
                     <div class="space-x-4">
-                        <a href="#about" class="bg-blue-600 px-6 py-3 hover:bg-blue-700 text-white font-bold rounded-full transition duration-300">
+                        <a routerLink="/about-us" routerLinkActive="text-blue-600" class="bg-blue-600 px-6 py-3 hover:bg-blue-700 text-white font-bold rounded-full transition duration-300 cursor-pointer">
                             Learn More
-                        </a>
-                        <a href="#donate" class="bg-green-600 px-6 py-3 hover:bg-green-700 text-white font-bold rounded-full transition duration-300">
-                            Donate Now
                         </a>
                     </div>
                 </div>
             </section>
 
-            <section id="about" class="py-16 bg-gray-100 bg-opacity-90">
+            <section id="about" class="py-16 bg-gray-100 bg-opacity-80">
                 <div class="container mx-auto px-4">
                     <h2 class="text-4xl font-bold text-center mb-8">About Us</h2>
                     <p class="text-lg text-center max-w-3xl mx-auto">
@@ -49,18 +34,18 @@
                 </div>
             </section>
 
-            <section id="beneficiaries" class="py-16">
+            <section id="beneficiaries" class="py-16 bg-white bg-opacity-80">
                 <app-beneficiaries></app-beneficiaries>
             </section>
 
-            <section id="partners" class="py-16 bg-gradient-to-r from-green-400 to-blue-500 animate-gradient-x">
+            <section id="partners" class="py-16 bg-gradient-to-r from-green-400 to-blue-500 animate-gradient-x bg-opacity-80">
                 <div class="container mx-auto px-4">
                     <h2 class="text-4xl font-bold text-center mb-8 text-white">Our NGO Partners</h2>
                     <belt></belt>
                 </div>
             </section>
 
-            <section id="donate" class="py-16 bg-white bg-opacity-90">
+            <section id="donate" class="py-16 bg-white bg-opacity-80">
                 <div class="container mx-auto px-4 text-center">
                     <h2 class="text-4xl font-bold mb-8">Make a Difference Today</h2>
                     <p class="text-lg mb-8 max-w-2xl mx-auto">
@@ -70,7 +55,7 @@
                     <app-donate-now></app-donate-now>
                 </div>
             </section>
-            <section>
+            <section class="bg-white bg-opacity-80">
                 <app-fields></app-fields>
             </section>
         </main>
@@ -93,4 +78,3 @@
         animation: gradient-x 15s ease infinite;
     }
 </style>
-  
