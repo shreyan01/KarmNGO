@@ -5,8 +5,7 @@ import { Component, OnInit } from '@angular/core';
   standalone: true,
   template: `
     <button 
-      class="fixed bottom-6 z-20 right-6 bg-orange-500 text-white font-bold p-6 rounded-full shadow-lg hover:bg-orange-600 transition-transform transform hover:scale-105" 
-      [class.vibrate]="isVibrating"
+      class="fixed bottom-6 z-20 right-6 bg-orange-500 text-white font-bold p-6 rounded-full shadow-lg hover:bg-orange-600 transition-transform transform hover:scale-105 vibrate" 
       (click)="donate()">
       Donate Now
     </button>
@@ -26,10 +25,8 @@ import { Component, OnInit } from '@angular/core';
   `]
 })
 export class DonateNowComponent implements OnInit {
-  isVibrating = false;
-
   ngOnInit() {
-    // Remove the setInterval to prevent continuous vibration
+    // Initialization logic if needed
   }
 
   donate() {
