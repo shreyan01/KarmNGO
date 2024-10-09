@@ -18,7 +18,7 @@ import { RouterModule } from '@angular/router';
             <a routerLink="/stories" routerLinkActive="text-blue-600" class="text-gray-800 hover:text-blue-600 transition duration-300">Stories</a>
             <a routerLink="/" fragment="activities" class="text-gray-800 hover:text-blue-600 transition duration-300">Activities</a>
             <a routerLink="/" fragment="certificate" class="text-gray-800 hover:text-blue-600 transition duration-300">Certificate</a>
-            <a routerLink="/" fragment="volunteer" class="text-gray-800 hover:text-blue-600 transition duration-300">Volunteer</a>
+            <a routerLink="/volunteer" fragment="volunteer" class="text-gray-800 hover:text-blue-600 transition duration-300">Volunteer</a>
           </div>
           <button (click)="toggleDrawer()" class="md:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -46,7 +46,7 @@ import { RouterModule } from '@angular/router';
             <a routerLink="/stories" routerLinkActive="text-blue-600" class="text-gray-800 hover:text-blue-600 transition duration-300">Stories</a>
             <a routerLink="/" fragment="activities" class="text-gray-800 hover:text-blue-600 transition duration-300">Activities</a>
             <a routerLink="/" fragment="certificate" class="text-gray-800 hover:text-blue-600 transition duration-300">Certificate</a>
-            <a routerLink="/" fragment="volunteer" class="text-gray-800 hover:text-blue-600 transition duration-300">Volunteer</a>
+            <a routerLink="/volunteer" fragment="volunteer" class="text-gray-800 hover:text-blue-600 transition duration-300">Volunteer</a>
           </div>
         </div>
       </div>
