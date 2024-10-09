@@ -1,1 +1,113 @@
-<p>volunteer works!</p>
+<div class="min-h-screen bg-gradient-to-br from-green-100 via-blue-100 to-purple-100">
+  <app-navbar></app-navbar>
+
+  <main class="container mx-auto px-4 py-16">
+    <h1 class="text-5xl font-bold text-center mb-12 text-gray-800">Join Our Volunteer Team</h1>
+
+    <!-- Hero Section -->
+    <section class="mb-16 relative overflow-hidden rounded-lg shadow-lg">
+      <img src="https://source.unsplash.com/random/1200x400?volunteer" alt="Volunteers in action" class="w-full h-96 object-cover">
+      <div class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center">
+        <p class="text-white text-3xl font-semibold text-center max-w-2xl px-4">Make a difference in your community and beyond. Join our passionate team of volunteers today!</p>
+      </div>
+    </section>
+
+    <!-- Impact Counter -->
+    <section class="mb-16 bg-white bg-opacity-80 rounded-lg shadow-lg p-8">
+      <h2 class="text-3xl font-semibold mb-8 text-center">Our Impact So Far</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div class="impact-counter">
+          <span class="text-4xl font-bold text-blue-600">5,000+</span>
+          <p class="text-xl mt-2">Volunteers</p>
+        </div>
+        <div class="impact-counter">
+          <span class="text-4xl font-bold text-green-600">100+</span>
+          <p class="text-xl mt-2">Projects Completed</p>
+        </div>
+        <div class="impact-counter">
+          <span class="text-4xl font-bold text-purple-600">50,000+</span>
+          <p class="text-xl mt-2">Lives Impacted</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Volunteer Opportunities -->
+    <section class="mb-16">
+      <h2 class="text-3xl font-semibold mb-8 text-center">Volunteer Opportunities</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div *ngFor="let opportunity of volunteerOpportunities" class="bg-white rounded-lg shadow-lg overflow-hidden">
+          <img [src]="opportunity.image" [alt]="opportunity.title" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">{{ opportunity.title }}</h3>
+            <p class="text-gray-600 mb-4">{{ opportunity.description }}</p>
+            <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded transition duration-300">
+              Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Volunteer Sign-up Form -->
+    <section class="mb-16 bg-white bg-opacity-80 rounded-lg shadow-lg p-8">
+      <h2 class="text-3xl font-semibold mb-8 text-center">Sign Up to Volunteer</h2>
+      <form (ngSubmit)="onSubmit()" #volunteerForm="ngForm" class="max-w-2xl mx-auto">
+        <div class="mb-4">
+          <label for="name" class="block text-gray-700 font-bold mb-2">Name</label>
+          <input type="text" id="name" name="name" [(ngModel)]="volunteerData.name" required
+            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+          <input type="email" id="email" name="email" [(ngModel)]="volunteerData.email" required
+            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+        <div class="mb-4">
+          <label for="phone" class="block text-gray-700 font-bold mb-2">Phone</label>
+          <input type="tel" id="phone" name="phone" [(ngModel)]="volunteerData.phone"
+            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+        </div>
+        <div class="mb-4">
+          <label for="interests" class="block text-gray-700 font-bold mb-2">Areas of Interest</label>
+          <select id="interests" name="interests" [(ngModel)]="volunteerData.interests" multiple
+            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500">
+            <option value="education">Education</option>
+            <option value="healthcare">Healthcare</option>
+            <option value="environment">Environment</option>
+            <option value="community">Community Development</option>
+          </select>
+        </div>
+        <div class="mb-4">
+          <label for="message" class="block text-gray-700 font-bold mb-2">Why do you want to volunteer?</label>
+          <textarea id="message" name="message" [(ngModel)]="volunteerData.message" rows="4"
+            class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+        </div>
+        <div class="text-center">
+          <button type="submit" [disabled]="!volunteerForm.form.valid"
+            class="bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full transition duration-300 disabled:opacity-50">
+            Submit Application
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Volunteer Testimonials -->
+    <section class="mb-16">
+      <h2 class="text-3xl font-semibold mb-8 text-center">What Our Volunteers Say</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div *ngFor="let testimonial of volunteerTestimonials" class="bg-white rounded-lg shadow-lg p-6">
+          <p class="text-gray-600 mb-4">"{{ testimonial.quote }}"</p>
+          <div class="flex items-center">
+            <img [src]="testimonial.image" [alt]="testimonial.name" class="w-12 h-12 rounded-full mr-4">
+            <div>
+              <p class="font-semibold">{{ testimonial.name }}</p>
+              <p class="text-sm text-gray-500">{{ testimonial.role }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <app-footer></app-footer>
+</div>
