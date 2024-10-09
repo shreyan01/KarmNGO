@@ -1,1 +1,113 @@
-<p>stories works!</p>
+<div class="min-h-screen bg-gradient-to-br from-blue-100 via-purple-100 to-pink-100">
+  <app-navbar></app-navbar>
+
+  <div class="container mx-auto px-4 py-16">
+    <h1 class="text-5xl font-bold text-center mb-12 text-gray-800">Success Stories</h1>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+      <!-- Story Card 1 -->
+      <div class="relative group">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 group-hover:scale-105">
+          <img src="https://via.placeholder.com/400x300" alt="Story 1" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2">Empowering Rural Education</h3>
+            <p class="text-gray-600">A small village transforms through educational initiatives...</p>
+          </div>
+        </div>
+        <div class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+          <div class="bg-white rounded-lg p-8 max-w-4xl w-full max-h-[90vh] overflow-y-auto" (mouseleave)="closeDialog($event)">
+            <h3 class="text-3xl font-semibold mb-4">Empowering Rural Education</h3>
+            <img src="https://via.placeholder.com/800x600" alt="Story 1 Detail" class="w-full h-96 object-cover mb-4 rounded">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              In a small village, our NGO implemented a comprehensive educational program. This initiative not only improved literacy rates but also introduced modern teaching methods and technologies. The impact was transformative, opening new opportunities for the youth and revitalizing the entire community.
+              
+              The program included building new schools, training local teachers, and providing educational resources. We also introduced digital learning tools, connecting the village to global educational resources. The results were remarkable, with school attendance rates soaring and students achieving higher academic standards.
+              
+              This success story demonstrates the power of education in transforming communities and creating sustainable development. It has become a model for our future projects in other rural areas.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Story Card 2 -->
+      <div class="relative group">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 group-hover:scale-105">
+          <img src="https://via.placeholder.com/400x300" alt="Story 2" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2">Clean Water Initiative</h3>
+            <p class="text-gray-600">Bringing clean water to remote communities...</p>
+          </div>
+        </div>
+        <div class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+          <div class="bg-white rounded-lg p-8 max-w-4xl w-full max-h-[90vh] overflow-y-auto" (mouseleave)="closeDialog($event)">
+            <h3 class="text-3xl font-semibold mb-4">Clean Water Initiative</h3>
+            <img src="https://via.placeholder.com/800x600" alt="Story 2 Detail" class="w-full h-96 object-cover mb-4 rounded">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              Our clean water project reached several remote communities, installing modern water purification systems. This initiative dramatically reduced waterborne diseases and improved overall health. The project also educated locals on water conservation and hygiene practices, ensuring long-term sustainability of the initiative.
+              
+              We implemented a multi-faceted approach, including drilling wells, installing filtration systems, and constructing sanitation facilities. Community members were trained in maintenance and repair, empowering them to manage their water resources independently.
+              
+              The impact has been profound, with significant improvements in health outcomes, increased school attendance, and enhanced economic productivity as less time is spent collecting water from distant sources.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Story Card 3 -->
+      <div class="relative group">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 group-hover:scale-105">
+          <img src="https://via.placeholder.com/400x300" alt="Story 3" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2">Women's Empowerment Program</h3>
+            <p class="text-gray-600">Supporting women entrepreneurs in urban areas...</p>
+          </div>
+        </div>
+        <div class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+          <div class="bg-white rounded-lg p-8 max-w-4xl w-full max-h-[90vh] overflow-y-auto" (mouseleave)="closeDialog($event)">
+            <h3 class="text-3xl font-semibold mb-4">Women's Empowerment Program</h3>
+            <img src="https://via.placeholder.com/800x600" alt="Story 3 Detail" class="w-full h-96 object-cover mb-4 rounded">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              Our women's empowerment program in urban areas provided training, resources, and support to aspiring women entrepreneurs. The program helped numerous women start their own businesses, fostering economic independence and community leadership.
+              
+              We offered workshops on business planning, financial management, and marketing strategies. Additionally, we provided microloans and mentorship opportunities, connecting participants with successful businesswomen in their communities.
+              
+              The results have been inspiring, with many participants not only improving their own economic situations but also creating jobs for others in their communities. This program has become a catalyst for social change, challenging gender norms and promoting equality.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Story Card 4 -->
+      <div class="relative group">
+        <div class="bg-white rounded-lg shadow-lg overflow-hidden transform transition-all duration-300 group-hover:scale-105">
+          <img src="https://via.placeholder.com/400x300" alt="Story 4" class="w-full h-48 object-cover">
+          <div class="p-4">
+            <h3 class="text-xl font-semibold mb-2">Sustainable Agriculture Project</h3>
+            <p class="text-gray-600">Introducing eco-friendly farming techniques...</p>
+          </div>
+        </div>
+        <div class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+          <div class="bg-white rounded-lg p-8 max-w-4xl w-full max-h-[90vh] overflow-y-auto" (mouseleave)="closeDialog($event)">
+            <h3 class="text-3xl font-semibold mb-4">Sustainable Agriculture Project</h3>
+            <img src="https://via.placeholder.com/800x600" alt="Story 4 Detail" class="w-full h-96 object-cover mb-4 rounded">
+            <p class="text-gray-700 text-lg leading-relaxed">
+              Our sustainable agriculture project introduced eco-friendly farming techniques to rural communities. This initiative not only increased crop yields but also promoted environmental conservation. Farmers learned about organic farming, water management, and soil conservation, leading to improved livelihoods and food security.
+              
+              We implemented demonstration farms to showcase techniques such as crop rotation, composting, and integrated pest management. Farmers were provided with organic seeds and taught how to create natural fertilizers and pesticides.
+              
+              The impact has been significant, with participating farmers reporting higher yields, reduced costs, and healthier soil. This project has not only improved food security in the region but also contributed to climate change mitigation through sustainable land use practices.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <app-footer></app-footer>
+</div>
+
+<style>
+  .group:hover .fixed {
+    backdrop-filter: blur(5px);
+  }
+</style>
