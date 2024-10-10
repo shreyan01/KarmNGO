@@ -16,7 +16,7 @@ import { RouterModule } from '@angular/router';
             <a routerLink="/about-us" routerLinkActive="text-blue-600" class="text-gray-800 hover:text-blue-600 transition duration-300">About Us</a>
             <a routerLink="/contact" routerLinkActive="text-blue-600" class="text-gray-800 hover:text-blue-600 transition duration-300">Contact Us</a>
             <a routerLink="/stories" routerLinkActive="text-blue-600" class="text-gray-800 hover:text-blue-600 transition duration-300">Stories</a>
-            <a routerLink="/" fragment="activities" class="text-gray-800 hover:text-blue-600 transition duration-300">Activities</a>
+            <a routerLink="/activities" routerLinkActive="text-blue-600" class="text-gray-800 hover:text-blue-600 transition duration-300">Activities</a>
             <a routerLink="/" fragment="certificate" class="text-gray-800 hover:text-blue-600 transition duration-300">Certificate</a>
             <a routerLink="/volunteer" fragment="volunteer" class="text-gray-800 hover:text-blue-600 transition duration-300">Volunteer</a>
           </div>
@@ -44,7 +44,7 @@ import { RouterModule } from '@angular/router';
             <a routerLink="/about-us" routerLinkActive="text-blue-600" class="text-gray-800 hover:text-blue-600 transition duration-300">About Us</a>
             <a routerLink="/contact" routerLinkActive="text-blue-600" class="text-gray-800 hover:text-blue-600 transition duration-300">Contact Us</a>
             <a routerLink="/stories" routerLinkActive="text-blue-600" class="text-gray-800 hover:text-blue-600 transition duration-300">Stories</a>
-            <a routerLink="/" fragment="activities" class="text-gray-800 hover:text-blue-600 transition duration-300">Activities</a>
+            <a routerLink="/activities" routerLinkActive="text-blue-600" class="text-gray-800 hover:text-blue-600 transition duration-300">Activities</a>
             <a routerLink="/" fragment="certificate" class="text-gray-800 hover:text-blue-600 transition duration-300">Certificate</a>
             <a routerLink="/volunteer" fragment="volunteer" class="text-gray-800 hover:text-blue-600 transition duration-300">Volunteer</a>
           </div>
