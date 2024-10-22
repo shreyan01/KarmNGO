@@ -24,17 +24,17 @@ export class VolunteerComponent {
     {
       title: 'Education Support',
       description: 'Help children in underserved communities with their studies and extracurricular activities.',
-      image: 'https://source.unsplash.com/random/400x300?education'
+      image: '/ed-sup-volunteer.jpg'
     },
     {
       title: 'Environmental Conservation',
       description: 'Participate in tree planting, beach cleanups, and wildlife conservation projects.',
-      image: 'https://source.unsplash.com/random/400x300?environment'
+      image: '/env-con-volunteer.jpg'
     },
     {
       title: 'Community Health',
       description: 'Assist in health camps, awareness programs, and elderly care initiatives.',
-      image: 'https://source.unsplash.com/random/400x300?healthcare'
+      image: '/com-health-volunteer.jpg'
     }
   ];
 
@@ -43,19 +43,19 @@ export class VolunteerComponent {
       quote: 'Volunteering with this NGO has been a life-changing experience. Ive learned so much and made a real difference in peoples lives.',
       name: 'Sarah Johnson',
       role: 'Education Volunteer',
-      image: 'https://source.unsplash.com/random/100x100?woman'
+      image: '/volunteer1.jpg'
     },
     {
       quote: 'The team is incredibly supportive, and the projects are well-organized. Im proud to be part of such a meaningful cause.',
       name: 'Michael Chen',
       role: 'Environmental Volunteer',
-      image: 'https://source.unsplash.com/random/100x100?man'
+      image: '/volunteer2.jpg'
     },
     {
       quote: 'Ive gained valuable skills and made lifelong friends while contributing to my community. Its been an amazing journey.',
       name: 'Emily Rodriguez',
       role: 'Healthcare Volunteer',
-      image: 'https://source.unsplash.com/random/100x100?woman2'
+      image: '/volunteer3.jpg'
     }
   ];
 
