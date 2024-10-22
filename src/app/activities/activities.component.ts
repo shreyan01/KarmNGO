@@ -23,37 +23,37 @@ export class ActivitiesComponent {
       title: 'Community Health Camp',
       description: 'Organized a free health check-up camp for underprivileged communities, providing basic healthcare and medical advice.',
       date: new Date('2023-11-15'),
-      image: 'https://source.unsplash.com/random/800x600?health'
+      image: 'https://placehold.co/800x600?text=Community+Health+Camp'
     },
     {
       title: 'Tree Planting Drive',
       description: 'Conducted a massive tree planting campaign to combat deforestation and promote environmental awareness.',
       date: new Date('2023-07-22'),
-      image: 'https://source.unsplash.com/random/800x600?tree-planting'
+      image: 'https://placehold.co/800x600?text=Tree+Planting+Drive'
     },
     {
       title: 'Education for All Initiative',
       description: 'Launched a program to provide free education and school supplies to children from low-income families.',
       date: new Date('2022-09-05'),
-      image: 'https://source.unsplash.com/random/800x600?education'
+      image: 'https://placehold.co/800x600?text=Education+for+All+Initiative'
     },
     {
       title: 'Women Empowerment Workshop',
       description: 'Organized skill development and entrepreneurship workshops for women in rural areas.',
       date: new Date('2022-03-08'),
-      image: 'https://source.unsplash.com/random/800x600?women-empowerment'
+      image: 'https://placehold.co/800x600?text=Women+Empowerment+Workshop'
     },
     {
       title: 'Clean Water Project',
       description: 'Installed water purification systems in villages lacking access to clean drinking water.',
       date: new Date('2021-06-30'),
-      image: 'https://source.unsplash.com/random/800x600?water'
+      image: 'https://placehold.co/800x600?text=Clean+Water+Project'
     },
     {
       title: 'Disaster Relief Efforts',
       description: 'Provided emergency supplies and support to communities affected by natural disasters.',
       date: new Date('2021-01-15'),
-      image: 'https://source.unsplash.com/random/800x600?disaster-relief'
+      image: 'https://placehold.co/800x600?text=Disaster+Relief+Efforts'
     }
   ];
 
