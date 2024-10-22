@@ -37,9 +37,9 @@ var window: Window & typeof globalThis
 })
 export class BeneficiariesComponent implements OnInit, OnDestroy {
   cards = [
-    { name: 'John Doe', description: 'Lorem ipsum dolor sit amet', image: 'https://via.placeholder.com/150' },
-    { name: 'Jane Smith', description: 'Consectetur adipiscing elit', image: 'https://via.placeholder.com/150' },
-    { name: 'Bob Johnson', description: 'Sed do eiusmod tempor incididunt', image: 'https://via.placeholder.com/150' },
+    { name: 'Baby Ananya', description: 'Ananya is fighting for her life from rare ABC MEDIAL CANCER', image: '/baneficiary1.jpg' },
+    { name: 'Pinky Devi', description: 'PINKY DEVI”  A mother of 2 children and she is suffering from a life threatening CHRONIC KIDNEY DISEASE.', image: '/beneficiary2.jpg' },
+    { name: 'Pragya', description: 'Pragya, who is 3 years, 7 months old has been diagnosed with Blood Cancer', image: '/beneficiary3.png' },
     { name: 'Alice Brown', description: 'Ut labore et dolore magna aliqua', image: 'https://via.placeholder.com/150' },
   ];
 

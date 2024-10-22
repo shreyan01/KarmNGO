@@ -28,32 +28,32 @@ export class FieldsComponent {
     {
       name: 'Education',
       description: 'Providing access to quality education and learning resources for underprivileged communities.',
-      image: 'https://source.unsplash.com/random/800x600?education'
+      image: '/Mission-Education.png'
     },
     {
       name: 'Healthcare',
       description: 'Improving access to essential healthcare services and promoting public health initiatives.',
-      image: 'https://source.unsplash.com/random/800x600?healthcare'
+      image: '/Health.jpg'
     },
     {
       name: 'Environmental Conservation',
       description: 'Protecting natural habitats and promoting sustainable practices to combat climate change.',
-      image: 'https://source.unsplash.com/random/800x600?environment'
+      image: '/environment.png'
     },
     {
       name: 'Women Empowerment',
       description: 'Supporting gender equality and providing opportunities for women to thrive in various fields.',
-      image: 'https://source.unsplash.com/random/800x600?women'
+      image: '/girl-education1.jpg'
     },
     {
       name: 'Poverty Alleviation',
       description: 'Implementing programs to reduce poverty and improve the quality of life for vulnerable populations.',
-      image: 'https://source.unsplash.com/random/800x600?poverty'
+      image: '/employment1.jpg'
     },
     {
       name: 'Disaster Relief',
       description: 'Providing immediate assistance and long-term support to communities affected by natural disasters.',
-      image: 'https://source.unsplash.com/random/800x600?disaster'
+      image: '/disaster.jpg'
     }
   ];
 }
